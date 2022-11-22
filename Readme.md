@@ -1,7 +1,7 @@
 # Личный проект «Седона» 
 
 * Студент: [Татьяна Соколова](https://up.htmlacademy.ru/adaptive/27/user/2179995).
-* Наставник: `Неизвестно`.
+* Наставник: [Алёна Сафьянникова](https://htmlacademy.ru/profile/safyann).
 
 ---
 
