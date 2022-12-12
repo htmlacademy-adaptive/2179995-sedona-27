@@ -1,0 +1,29 @@
+.page-footer__title {
+  margin: 0;
+  padding: 28px 78px 33px 76px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.social__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.copyright__text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.social__icon {
+  width: 24px;
+  height: 24px;
+  padding: 12px;
+  background-color: #81B3D2;
+}
