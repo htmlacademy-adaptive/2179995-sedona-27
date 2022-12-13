@@ -1,0 +1,104 @@
+.feedback-form {
+  padding: 24px 20px;
+}
+.feedback-form__subtitle {
+  padding: 24px 0 20px;
+  margin: 0;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.feedback-form__field-label {
+  padding-left: 16px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.feedback-form__field-control {
+  padding: 16px;
+  border: 0;
+  width: 280px;
+  height: 58px;
+  background-color: #F2F2F2;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  box-sizing: border-box;
+}
+.feedback-form__field-control:not(:last-of-type) {
+  margin-bottom: 16px;
+}
+.feedback-form__field-control--contact-info {
+  width: 222px;
+  height: 58px;
+}
+.feedback-form__field-icon {
+  margin: 0;
+  padding: 20px;
+  width: 18px;
+  height: 18px;
+  background-color: #E6E6E6;
+}
+.feedback-form__group {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+.feedback-list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+}
+.feedback-list__item:not(:last-child) {
+  margin-bottom: 16px;
+}
+.feedback-list__item:last-of-type {
+  margin-bottom: 34px;
+}
+.feedback-form__textarea {
+  width: 279px;
+  height: 150px;
+  border: 0;
+  padding: 16px;
+  margin-bottom: 56px;
+  box-sizing: border-box;
+  background-color: #F2F2F2;
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: rgba(0, 0, 0, 0.3);
+}
+.feedback-form__button {
+  border: 0;
+  padding: 16px 49px;
+  margin: 0;
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  color: #ffffff;
+  background-color: #81B3D2;
+}
+.feedback-footnote {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 21px;
+  text-align: right;
+  text-transform: uppercase;
+  color: rgba(51, 51, 51, 0.6);
+}

@@ -1,0 +1,23 @@
+.hero__background {
+  background-image: url(/source/img/intro-triangle.svg), url(/source/img/SEDONA.svg), url(/source/img/back-mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: auto 100%, 282px 214px, 320px 389px;
+  background-position: 50% 100%, 50% 50%, 50% 50%;
+  min-height: 214px;
+}
+.hero__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.hero__description {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+}
