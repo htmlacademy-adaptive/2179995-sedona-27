@@ -1,0 +1,27 @@
+.main-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  flex: 1 1 auto;
+  width: 320px;
+
+  @media (min-width:@tablet-width) {
+    margin: 0 auto;
+    flex: 1 1 auto;
+    width: 768px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width:@desktop-width) {
+    margin: 0 auto;
+    flex: 1 1 auto;
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+}

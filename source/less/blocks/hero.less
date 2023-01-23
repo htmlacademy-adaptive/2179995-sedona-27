@@ -1,29 +1,157 @@
-.hero-wrapper {}
+.hero-wrapper {
 
-.hero {}
+  @media (min-width:@tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width:@desktop-width) {
+    width: 1200px;
+  }
+
+}
+
+
 
 .hero__background {
-  background-image: url(/source/img/intro-triangle.svg), url(/source/img/SEDONA.svg), url(/source/img/back-mobile.jpg);
+  width: 320px;
+  height: 158px;
+  margin: 0 auto;
+  background-image: url(../img/intro-triangle-mobile.svg),
+    url(../img/SEDONA.svg),
+    url(../img/index/back-mobile.jpg);
   background-repeat: no-repeat;
-  background-size: auto 100%, 282px 214px, 320px 389px;
-  background-position: 50% 100%, 50% 50%, 50% 50%;
-  min-height: 214px;
+  background-size: 320px 57px, 229px 39px, 320px 157px;
+  background-position: 50% 100%, 50% 45%, 50% 100%;
+  margin-bottom: 36px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url(../img/intro-triangle-mobile.svg),
+      url(../img/SEDONA.svg),
+      url(../img/index/back-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: 320px 57px, 229px 39px, 320px 157px;
+    background-position: 50% 100%, 50% 45%, 50% 100%;
+
+  }
+
+  @media (min-width:@tablet-width) {
+    width: 768px;
+    height: 290px;
+    background-image: url(../img/intro-triangle-tablet.svg),
+      url(../img/SEDONA.svg),
+      url(../img/index/back-tablet.jpg);
+    background-repeat: no-repeat;
+    background-size: 768px 57px, 457px 78px, cover;
+    background-position: 50% 100%, 50% 45%, 50% 100%;
+
+    margin-bottom: 64px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url(../img/intro-triangle-tablet.svg),
+        url(../img/SEDONA.svg), url(../img/index/back-tablet@2x.jpg);
+      background-size: 768px 57px, 457px 78px, cover;
+      background-position: 50% 100%, 50% 45%, 50% 100%;
+    }
+  }
+
+  @media (min-width:@desktop-width) {
+    width: 1200px;
+    height: 301px;
+    background-image: url(../img/intro-triangle-desktop.svg),
+      url(../img/SEDONA.svg),
+      url(../img/index/back-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: 1200px 57px, 461px 80px, 1200px 518px;
+    background-position: 50% 100%, 50% 45.5%, 50% 100%;
+    margin-bottom: 113px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url(../img/intro-triangle-desktop.svg),
+        url(../img/SEDONA.svg), url(../img/index/back-desktop@2x.jpg);
+      background-size: 1200px 57px, 457px 80px, 1200px 518px;
+    }
+  }
+
+}
+
+.hero__background--catalog {
+  margin-bottom: 36px;
+
+
+  @media (min-width:@tablet-width) {
+
+    margin-bottom: 64px;
+
+  }
+
+  @media (min-width:@desktop-width) {
+
+    margin-bottom: 98px;
+
+  }
 }
 
 .hero__title {
+  margin: 0;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
   text-align: center;
   text-transform: uppercase;
+  margin-bottom: 24px;
+
+  @media (min-width:@tablet-width) {
+    font-size: 30px;
+    line-height: 26px;
+    margin-bottom: 20px;
+  }
+
+  @media (min-width:@desktop-width) {
+    margin-bottom: 29px;
+  }
 }
 
 .hero__description {
+  margin: 0;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
   text-align: center;
   text-transform: uppercase;
+  position: relative;
+
+  @media (max-width:@mobile-width-only) {
+    margin-bottom: 28px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: calc(100% + 28px);
+      right: 0;
+      width: 320px;
+      height: 1px;
+
+      background: #E5E5E5;
+    }
+
+    br {
+      display: none;
+    }
+  }
+
+  @media (min-width:@tablet-width) {
+
+    font-size: 14px;
+    line-height: 24px;
+    padding: 0 166px 0 167px;
+    margin-bottom: 102px;
+  }
+
+  @media (min-width:@desktop-width) {
+
+    padding: 0 384px 0 381px;
+    margin-bottom: 67px;
+  }
 }
