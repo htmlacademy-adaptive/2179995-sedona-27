@@ -1,0 +1,225 @@
+.feedback-list__field {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.feedback-list__field-label {
+  padding-left: 16px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.feedback-list__field-label--contact-info {
+  @media (min-width: @tablet-width) {
+    margin-left: 16px;
+  }
+}
+
+.feedback-list__field-control {
+  padding: 16px;
+  border: 0;
+  width: 280px;
+  height: 58px;
+  background-color: #f2f2f2;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 26px;
+  box-sizing: border-box;
+
+  &:hover,
+  &:focus {
+    background: #e5e5e5;
+  }
+
+  &:active {
+    background: #ffffff;
+    border: none;
+    outline: 4px solid #e5e5e5;
+    outline-offset: -4px;
+  }
+
+  &:disabled {
+    background: darken(#e5e5e5, 20%);
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 280px;
+    min-height: 58px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 430px;
+    min-height: 58px;
+  }
+}
+
+.feedback-list__field-control:not(:last-of-type) {
+  margin-bottom: 16px;
+}
+
+
+.feedback-list__field-control--contact-info {
+  width: 222px;
+  min-height: 58px;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 16px;
+    margin-bottom: 16px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 344px;
+    min-height: 58px;
+    margin-bottom: 16px;
+  }
+}
+
+.feedback-list__field-icon {
+  margin: 0;
+  padding: 20px;
+  width: 18px;
+  height: 18px;
+  background-color: #e6e6e6;
+  display: flex;
+  align-self: flex-end;
+  fill: #010101;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 16px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 16px;
+  }
+}
+
+.feedback-list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  display: flex;
+  flex-direction: column;
+}
+
+.feedback-list--radio {
+  @media (min-width: @tablet-width) {
+    width: 648px;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-items: flex-start;
+    justify-content: center;
+    gap: 16px 32px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 960px;
+    padding: 17px 53px;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-items: flex-start;
+    box-sizing: border-box;
+    gap: 64px;
+  }
+}
+
+.feedback-list--checkbox {
+  @media (min-width: @tablet-width) {
+    width: 480px;
+    padding: 0 84px;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-items: flex-start;
+    justify-content: center;
+    gap: 16px 34px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 960px;
+    padding: 31px 45px;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    justify-items: center;
+    justify-content: center;
+    align-self: center;
+    box-sizing: border-box;
+    gap: 64px;
+  }
+}
+
+.feedback-list__item {
+  display: flex;
+}
+
+.feedback-list__item:last-of-type {
+  @media (max-width: @mobile-width-only) {
+    margin-bottom: 16px;
+  }
+}
+
+.feedback-list__item:not(:last-child) {
+  @media (max-width: @mobile-width-only) {
+    margin-bottom: 16px;
+  }
+}
+
+.feedback-list__item--info:not(:last-child) {
+  @media (min-width: @tablet-width) {
+    margin-bottom: 16px;
+  }
+}
+
+.feedback-list__item--info:last-of-type {
+  @media (max-width: @mobile-width-only) {
+    margin-bottom: 15px;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 15px;
+  }
+}
+
+.feedback-list__item--radio {
+  @media (min-width: @tablet-width) {
+    margin-right: 28px;
+    margin-left: -12px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
+.feedback-list__item--checkbox {
+  @media (min-width: @tablet-width) {
+    margin-right: 43px;
+    margin-left: 2px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
+.feedback-list__item--radio:last-child {
+  @media (max-width: @mobile-width-only) {
+    margin-bottom: 0;
+  }
+}
+
+.feedback-list__item--checkbox:last-child {
+  @media (max-width: @mobile-width-only) {
+    margin-bottom: 0;
+  }
+}

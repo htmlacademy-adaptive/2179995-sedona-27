@@ -65,7 +65,15 @@ const svg = () => {
   return gulp.src('source/img/*.svg')
     .pipe(svgo())
     .pipe(gulp.dest('build/img'));
+
 };
+const favicon = () => {
+  return gulp.src('source/img/favicons/*.svg')
+    .pipe(svgo())
+    .pipe(gulp.dest('build/img/favicons'));
+
+};
+
 
 export const sprite = () => {
   return gulp.src('source/img/icons/*.svg')
@@ -124,9 +132,6 @@ const watcher = () => {
 };
 
 
-// export default gulp.series(
-//   html, styles, server, watcher
-// );
 
 //Build
 export const build = gulp.series(
@@ -139,6 +144,7 @@ export const build = gulp.series(
     scripts,
     svg,
     sprite,
+    favicon,
     createWebp
   )
 );
@@ -153,6 +159,7 @@ export default gulp.series(
     scripts,
     svg,
     sprite,
+    favicon,
     createWebp
   ),
   gulp.series(
